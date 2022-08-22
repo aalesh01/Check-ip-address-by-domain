@@ -35,7 +35,7 @@ products.patch('/:productId', (req, res) => {
                index = i;
           }
      })
-     data[index] = { ...data[index] } ,req.body ;
+     data[index] = { ...data[index] , ...req.body };
      res.send(data)
 })
 
